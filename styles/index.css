@@ -1,10 +1,11 @@
+/* Estilos del Main */
+
 main {
     padding: 0px 100px;
-    background-color: #222;
     color: #fff;
 }
 
-/* Estilos del Main */
+/* Estilos de la barra de busqueda */
 .main-header {
     display: flex;
     flex-direction: column;
@@ -35,7 +36,7 @@ main {
 }
 
 .main-header__search-input:focus {
-    outline: 2px solid #39f;
+    outline: 1px solid #39f;
 }
 
 .main-header__search-button {
@@ -51,6 +52,7 @@ main {
     transition: 0.2s;
 }
 
+/* Estilos del contenedor del articulo principal (Con la sección de temas de estudio y publicaciones */
 .main-article {
     display: flex;
     flex-direction: column;
@@ -58,7 +60,8 @@ main {
     padding: 40px 20px;
 }
 
-.main-article__topics {
+/* Estilos de la cuadricula de temas de estudio */
+.main-article__topics-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,7 +70,7 @@ main {
     gap: 20px;
 }
 
-.main-article__topics-section {
+.main-article__topics-card {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -78,12 +81,124 @@ main {
     width: 300px;
     min-width: 250px;
     padding: 25px 30px;
-    background: var(--naranjaPrincipal);
+    background-color: var(--naranjaPrincipal);
     color: #fff;
 }
 
-.main-article__topics-section-title {
+.main-article__topics-card:hover {  
+    transition: 0.7s;
+    background-color: #ed8851;
+}
+
+.topics-card__title {
     color: #fff;
     font-size: 19px;
     font-weight: 500;
+}
+
+/* Estilos de la sección de publicaciones */
+
+/* Estilos de la sección de publicaciones recientes */
+.main-article__recent-posts {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azulOscuro);
+    flex: 1;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.recent-posts__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 25px 0px;
+}
+
+.recent-posts__header__title {
+    font-size: 25px;
+}
+
+.recent-posts__header__link {
+    background-color: var(--rojoBoton);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.recent-posts__header__link:hover {
+    background-color: var(--rojoPastel);
+}
+
+.recent-posts__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 35px;
+}
+
+.recent-posts__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: var(--azulClaro);
+    width: 251px;
+    padding: 0px 0px 20px 0px;
+}
+
+/* Estilos de cada elemento de publicación reciente */
+.recent-posts__item-image {
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #fff;
+}
+
+.recent-posts__item-header, .recent-posts__author-info {
+    padding: 0px 20px;
+}
+
+.recent-posts__item-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.recent-posts__item-title {
+    font-size: 22px;
+}
+
+.recent-posts__item-description {
+    font-size: 16px;
+    line-height: 28px;
+    color: #ddde;
+}
+
+.recent-posts__author-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 13px;
+}
+
+.recent-posts__author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.recent-posts__author-name {
+    font-size: 15px;
+}
+
+.recent-posts__post-date {
+    font-size: 14px;
+    color: #bbb;
 }

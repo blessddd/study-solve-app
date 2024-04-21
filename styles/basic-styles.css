@@ -10,18 +10,21 @@
     --rojoPastel: #E87F7F;
     --rojoBoton: #ED4A4A;
     --naranjaPrincipal: #ea580c; 
+    --azulClaro: #0D1219;
+    --azulOscuro: #010409;
 }
 
 body {
     background-color: #f1f5f9;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0;
 }
 
 main {
     flex: 1;
+    background-color: var(--azulClaro);
 }
 
 a {
@@ -41,7 +44,7 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #111;
+    background-color: var(--azulOscuro);
     color: #fff;
 }
 
@@ -66,8 +69,8 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0px 120px;
-    margin: 0px 60px 0px 0px;
+    gap: 0px 100px;
+    margin: 0px 40px 0px 0px;
 }
 
 .menu-bar__links__list-link {
@@ -83,7 +86,7 @@ li {
     display: flex;
     flex-direction: row;
     gap: 0px 20px;
-    margin: 0px -20px 0px 20px; 
+    margin: 0px -10px 0px 20px; 
 }
 
 .menu-bar__login-container-button {
@@ -102,7 +105,7 @@ li {
 
 /* Estilos del Footer */
 .footer {
-    background-color: #111;
+    background-color: var(--azulOscuro);
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -111,7 +114,7 @@ li {
 }
 
 .footer__header-title {
-    font-size: 25px;
+    font-size: 23px;
     color: #fff;
 }
 
@@ -119,6 +122,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex: 1;
 }
 
@@ -149,7 +153,7 @@ li {
 
 .footer__article__list-span {
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
 }
@@ -161,12 +165,12 @@ li {
     gap: 10px;
 }
 
-.footer__article__aside-icon {
+.footer__article__aside-app-icon {
     background-image: url('../images/logoStudySolve.png');
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    width: 500px;
+    width: 400px;
     height: 150px;
 }   
 

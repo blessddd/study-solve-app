@@ -1,0 +1,175 @@
+/* Estilos del main */
+main {
+    padding: 0px 100px;
+    color: #fff;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 30px 0px;
+    gap: 35px;
+}
+
+/* Estilos de la barra de creación de posts */
+
+.posts-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+}
+
+.posts-header__user-icon {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.posts-header__input {
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid var(--naranjaPrincipal);
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 2px;
+    color: #fff;
+}
+
+.posts-header__input:focus {
+    border: none;
+    outline: 2px solid var(--naranjaPrincipal);
+    padding: 10px 15px;
+    transition: 0.2s;
+    border-radius: 0.5rem;
+}
+
+.posts-header__button {
+    border: none;
+    padding: 0px 20px;
+    background-color: var(--naranjaPrincipal);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;    
+    height: 40px;
+}
+
+.posts-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.posts-content__main-title {
+    font-size: 30px;
+}
+
+
+/* Estilos de la tarjeta de cada publicación */
+.posts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #555;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background-color: #010409;
+}
+
+/* Estilos del encabezado de la tarjeta de cada publicación */
+.posts-item__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-item__header__user-section {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.posts-item__header__user-section__user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.posts-item__user-section__username {
+    color: #ddd;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.posts-item__user-section__time {
+    color: #aaa;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.posts-item__user-section__topic {
+    font-weight: 600;
+    font-size: 15px;
+    color: #aaa;
+}
+
+.posts-item__report-button {
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--rojoBoton);
+    color: #fff;
+    font-weight: 700;
+    margin: 0px 0px 6px 0px;
+}
+
+/* Estilos del contenido principal de la tarjeta de cada publicación */
+.posts-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px 0px 15px 0px;
+}
+
+.posts-item__content__title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #dde;
+}
+
+.posts-item__content__paragraph {
+    font-size: 15px;
+    line-height: 21px;
+    color: #ddde;
+}
+
+/* Estilos de los botones de interacción de la tarjeta de interacción de cada publicación */
+.posts-item__interactions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-item__interactions__main-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.posts-item__interaction-button {
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--naranjaPrincipal);
+}
