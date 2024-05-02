@@ -4,46 +4,102 @@
         <title>Study Solve - Inicio</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/basic-styles.css"/>
-        <link rel="stylesheet" href="../styles/index.css"/>
+        <link rel="stylesheet" href="../styles/basic-styles.css" />
+        <link rel="stylesheet" href="../styles/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
     </head>
     <body>
         <header>
             <nav class="menu-bar">
-                <a href="./index.html">
-                    <div class="menu-bar__logo" title="Logo de la App"></div>
-                </a>
-                <aside class="menu-bar__links">
-                    <ul class="menu-bar__links__list">
-                        <li>
-                            <a
-                                href="./about-us.html"
-                                class="menu-bar__links__list-link"
-                            >
-                                Sobre Nosotros
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#contacts"
-                                class="menu-bar__links__list-link"
-                            >
-                                Contacto
-                            </a>
-                        </li>
-                    </ul>
-                    <section class="menu-bar__login-container">
-                        <a href="" class="menu-bar__login-container-button">
-                            Iniciar Sesión
-                        </a>
-                        <a href="" class="menu-bar__login-container-button">
-                            Registrarse
-                        </a>
-                    </section>
-                </aside>
+                <header class="menu-bar__header">
+                    <button class="menu-bar__header__toggle-button show">
+                        <i
+                            class="menu-bar__header__toggle-button__icon fas fa-bars"
+                        ></i>
+                    </button>
+                    <a href="./index.html">
+                        <div
+                            class="menu-bar__header__logo"
+                            title="Logo de la App"
+                        ></div>
+                    </a>
+                </header>
+                <section class="menu-bar__login-links">
+                    <a href="" class="menu-bar__login__button">
+                        Iniciar Sesión
+                    </a>
+                    <a href="" class="menu-bar__login__button">
+                        Registrarse
+                    </a>
+                </section>
+            </nav>
+            <div class="menu-bar__dark-background hidden"></div>
+            <nav class="menu-bar__toggle-menu hidden">
+                <header class="menu-bar__header">
+                    <button class="menu-bar__header__toggle-button hide">
+                        <i
+                            class="menu-bar__header__toggle-button__icon fas fa-bars"
+                        ></i>
+                    </button>
+                    <a href="./index.html">
+                        <div
+                            class="menu-bar__header__logo"
+                            title="Logo de la App"
+                        ></div>
+                    </a>
+                </header>
+                <section class="menu-bar__toggle-menu__section">
+                    <article>
+                        <ul class="menu-bar__toggle-menu__links">
+                            <li>
+                                <a 
+                                    href="./index.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fas fa-house"
+                                    ></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="./about-us.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fa-solid fa-user-group"
+                                    ></i>
+                                    <span>Sobre Nosotros</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="./posts.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fas fa-newspaper"
+                                    ></i>
+                                    <span>Publicaciones</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#information" 
+                                    class="menu-bar__toggle-menu__link menu-bar__toggle-menu__link--us">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fa-solid fa-phone"
+                                    ></i>
+                                    <span>Contacto</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
             </nav>
         </header>
-        
+
         <main>
             <header class="main-header">
                 <h2 class="main-header__title">¿Qué quieres Aprender?</h2>
@@ -58,44 +114,35 @@
             </header>
 
             <article class="main-article">
-
                 <section class="main-article__topics-section">
                     <section class="main-article__topics-card">
-                        <span class="topics-card__title">
-                            Programación
-                        </span>
+                        <span class="topics-card__title"> Programación </span>
                     </section>
 
                     <section class="main-article__topics-card">
-                        <span class="topics-card__title">
-                            Hardware
-                        </span>
+                        <span class="topics-card__title"> Hardware </span>
                     </section>
 
                     <section class="main-article__topics-card">
-                        <span class="topics-card__title">
-                            Matemáticas
-                        </span>
+                        <span class="topics-card__title"> Matemáticas </span>
                     </section>
 
                     <section class="main-article__topics-card">
-                        <span class="topics-card__title">
-                            Fisica
-                        </span>
+                        <span class="topics-card__title"> Fisica </span>
                     </section>
 
                     <section class="main-article__topics-card">
-                        <span class="topics-card__title">
-                            Inglés
-                        </span>
+                        <span class="topics-card__title"> Inglés </span>
                     </section>
                 </section>
 
                 <section class="main-article__recent-posts">
                     <header class="recent-posts__header">
-                        <h3 class="recent-posts__header__title">Post recientes</h3>
-                        <a 
-                            class="recent-posts__header__link" 
+                        <h3 class="recent-posts__header__title">
+                            Post recientes
+                        </h3>
+                        <a
+                            class="recent-posts__header__link"
                             href="./posts.html"
                         >
                             Ver más
@@ -103,124 +150,139 @@
                     </header>
                     <section class="recent-posts__items">
                         <article class="recent-posts__item">
-                            <img 
-                                src="" 
-                                alt="Imagen de portada de la publicación" 
-                                title="Portada de la publicación" 
+                            <img
+                                src=""
+                                alt="Imagen de portada de la publicación"
+                                title="Portada de la publicación"
                                 class="recent-posts__item-image"
                             />
                             <header class="recent-posts__item-header">
-                                <h3 class="recent-posts__item-title">
-                                    Titulo
-                                </h3>
+                                <h3 class="recent-posts__item-title">Titulo</h3>
                                 <span class="recent-posts__item-description">
                                     Descripción.
                                 </span>
                             </header>
                             <aside class="recent-posts__author-info">
-                                <header class="recent-posts__author-info__header">
-                                    <h4 class="recent-posts__author-name">Nombre</h4>
-                                    <span class="recent-posts__post-date">Fecha</span>
+                                <header
+                                    class="recent-posts__author-info__header"
+                                >
+                                    <h4 class="recent-posts__author-name">
+                                        Nombre
+                                    </h4>
+                                    <span class="recent-posts__post-date">
+                                        Fecha
+                                    </span>
                                 </header>
-                                <img 
+                                <img
                                     class="recent-posts__author-image"
-                                    src="" 
-                                    alt="Imagen del icono del perfil del usuario" 
+                                    src=""
+                                    alt="Imagen del icono del perfil del usuario"
                                     title="Icono del usuario"
                                 />
                             </aside>
                         </article>
                         <article class="recent-posts__item">
-                            <img 
-                                src="" 
-                                alt="Imagen de portada de la publicación" 
-                                title="Portada de la publicación" 
+                            <img
+                                src=""
+                                alt="Imagen de portada de la publicación"
+                                title="Portada de la publicación"
                                 class="recent-posts__item-image"
                             />
                             <header class="recent-posts__item-header">
-                                <h3 class="recent-posts__item-title">
-                                    Titulo
-                                </h3>
+                                <h3 class="recent-posts__item-title">Titulo</h3>
                                 <span class="recent-posts__item-description">
                                     Descripción.
                                 </span>
                             </header>
                             <aside class="recent-posts__author-info">
-                                <header class="recent-posts__author-info__header">
-                                    <h4 class="recent-posts__author-name">Nombre</h4>
-                                    <span class="recent-posts__post-date">Fecha</span>
+                                <header
+                                    class="recent-posts__author-info__header"
+                                >
+                                    <h4 class="recent-posts__author-name">
+                                        Nombre
+                                    </h4>
+                                    <span class="recent-posts__post-date">
+                                        Fecha
+                                    </span>
                                 </header>
-                                <img 
+                                <img
                                     class="recent-posts__author-image"
-                                    src="" 
-                                    alt="Imagen del icono del perfil del usuario" 
+                                    src=""
+                                    alt="Imagen del icono del perfil del usuario"
                                     title="Icono del usuario"
                                 />
                             </aside>
                         </article>
                         <article class="recent-posts__item">
-                            <img 
-                                src="" 
-                                alt="Imagen de portada de la publicación" 
-                                title="Portada de la publicación" 
+                            <img
+                                src=""
+                                alt="Imagen de portada de la publicación"
+                                title="Portada de la publicación"
                                 class="recent-posts__item-image"
                             />
                             <header class="recent-posts__item-header">
-                                <h3 class="recent-posts__item-title">
-                                    Titulo
-                                </h3>
+                                <h3 class="recent-posts__item-title">Titulo</h3>
                                 <span class="recent-posts__item-description">
                                     Descripción.
                                 </span>
                             </header>
                             <aside class="recent-posts__author-info">
-                                <header class="recent-posts__author-info__header">
-                                    <h4 class="recent-posts__author-name">Nombre</h4>
-                                    <span class="recent-posts__post-date">Fecha</span>
+                                <header 
+                                    class="recent-posts__author-info__header"
+                                >
+                                    <h4 class="recent-posts__author-name">
+                                        Nombre
+                                    </h4>
+                                    <span class="recent-posts__post-date">
+                                        Fecha
+                                    </span>
                                 </header>
-                                <img 
+                                <img
                                     class="recent-posts__author-image"
-                                    src="" 
-                                    alt="Imagen del icono del perfil del usuario" 
+                                    src=""
+                                    alt="Imagen del icono del perfil del usuario"
                                     title="Icono del usuario"
                                 />
                             </aside>
                         </article>
                         <article class="recent-posts__item">
-                            <img 
-                                src="" 
-                                alt="Imagen de portada de la publicación" 
-                                title="Portada de la publicación" 
+                            <img
+                                src=""
+                                alt="Imagen de portada de la publicación"
+                                title="Portada de la publicación"
                                 class="recent-posts__item-image"
                             />
                             <header class="recent-posts__item-header">
-                                <h3 class="recent-posts__item-title">
-                                    Titulo
-                                </h3>
+                                <h3 class="recent-posts__item-title">Titulo</h3>
                                 <span class="recent-posts__item-description">
                                     Descripción.
                                 </span>
                             </header>
                             <aside class="recent-posts__author-info">
-                                <header class="recent-posts__author-info__header">
-                                    <h4 class="recent-posts__author-name">Nombre</h4>
-                                    <span class="recent-posts__post-date">Fecha</span>
+                                <header
+                                    class="recent-posts__author-info__header"
+                                >
+                                    <h4 class="recent-posts__author-name">
+                                        Nombre
+                                    </h4>
+                                    <span class="recent-posts__post-date">
+                                        Fecha
+                                    </span>
                                 </header>
-                                <img 
+                                <img
                                     class="recent-posts__author-image"
-                                    src="" 
-                                    alt="Imagen del icono del perfil del usuario" 
+                                    src=""
+                                    alt="Imagen del icono del perfil del usuario"
                                     title="Icono del usuario"
                                 />
                             </aside>
                         </article>
                     </section>
                 </section>
-
             </article>
         </main>
 
-        <footer class="footer" id="contacts">
+        <footer class="footer" id="information">
             <header>
                 <h3 class="footer__header-title">¿Quieres contactarnos?</h3>
             </header>
@@ -304,9 +366,13 @@
                             Todos los derechos reservados
                         </h4>
                     </header>
-                    <div class="footer__article__aside-app-icon" title="Logo de la App"></div>
+                    <div
+                        class="footer__article__aside-app-icon"
+                        title="Logo de la App"
+                    ></div>
                 </aside>
             </article>
         </footer>
+        <script src="../scripts/menu.js"></script>
     </body>
 </html>

@@ -22,7 +22,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     flex: 1;
-    background-color: var(--azulOscuro);
+    background: linear-gradient(var(--azulOscuro) 30%, #000b);/* var(--azulOscuro); */
     color: #fff;
     padding: 55px 100px 75px 100px;
     width: 100vw;
@@ -63,8 +63,6 @@ main {
     font-size: 16px;
     font-weight: 700;
     text-align: center;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
 }
 
 .presentation-article__header-button:hover {
@@ -89,8 +87,6 @@ main {
 }
 
 /* Sección de información */
-
-
 .information-article {
     display: flex;
     flex-direction: column;

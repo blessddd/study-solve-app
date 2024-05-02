@@ -4,58 +4,114 @@
         <title>Study Solve - Inicio</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/basic-styles.css"/>
-        <link rel="stylesheet" href="../styles/posts.css"/>
+        <link rel="stylesheet" href="../styles/basic-styles.css" />
+        <link rel="stylesheet" href="../styles/posts.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
     </head>
     <body>
         <header>
             <nav class="menu-bar">
-                <a href="./index.html">
-                    <div class="menu-bar__logo" title="Logo de la App"></div>
-                </a>
-                <aside class="menu-bar__links">
-                    <ul class="menu-bar__links__list">
-                        <li>
-                            <a
-                                href="./about-us.html"
-                                class="menu-bar__links__list-link"
-                            >
-                                Sobre Nosotros
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#contacts"
-                                class="menu-bar__links__list-link"
-                            >
-                                Contacto
-                            </a>
-                        </li>
-                    </ul>
-                    <section class="menu-bar__login-container">
-                        <a href="" class="menu-bar__login-container-button">
-                            Iniciar Sesión
-                        </a>
-                        <a href="" class="menu-bar__login-container-button">
-                            Registrarse
-                        </a>
-                    </section>
-                </aside>
+                <header class="menu-bar__header">
+                    <button class="menu-bar__header__toggle-button show">
+                        <i
+                            class="menu-bar__header__toggle-button__icon fas fa-bars"
+                        ></i>
+                    </button>
+                    <a href="./index.html">
+                        <div
+                            class="menu-bar__header__logo"
+                            title="Logo de la App"
+                        ></div>
+                    </a>
+                </header>
+                <section class="menu-bar__login-links">
+                    <a href="" class="menu-bar__login__button">
+                        Iniciar Sesión
+                    </a>
+                    <a href="" class="menu-bar__login__button">
+                        Registrarse
+                    </a>
+                </section>
+            </nav>
+            <div class="menu-bar__dark-background hidden"></div>
+            <nav class="menu-bar__toggle-menu hidden">
+                <header class="menu-bar__header">
+                    <button class="menu-bar__header__toggle-button hide">
+                        <i
+                            class="menu-bar__header__toggle-button__icon fas fa-bars"
+                        ></i>
+                    </button>
+                    <a href="./index.html">
+                        <div
+                            class="menu-bar__header__logo"
+                            title="Logo de la App"
+                        ></div>
+                    </a>
+                </header>
+                <section class="menu-bar__toggle-menu__section">
+                    <article>
+                        <ul class="menu-bar__toggle-menu__links">
+                            <li>
+                                <a 
+                                    href="./index.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fas fa-house"
+                                    ></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="./about-us.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fa-solid fa-user-group"
+                                    ></i>
+                                    <span>Sobre Nosotros</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="./posts.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fas fa-newspaper"
+                                    ></i>
+                                    <span>Publicaciones</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#information" 
+                                    class="menu-bar__toggle-menu__link menu-bar__toggle-menu__link--us">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fa-solid fa-phone"
+                                    ></i>
+                                    <span>Contacto</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
             </nav>
         </header>
-        
+
         <main>
             <article class="posts">
                 <header class="posts-header">
-                    <img 
+                    <img
                         class="posts-header__user-icon"
-                        src="" 
+                        src=""
                         alt="Imagen del perfil del usuario"
                         title="Icono del usuario"
                     />
-                    <input 
+                    <input
                         class="posts-header__input"
-                        type="text" 
+                        type="text"
                         placeholder="Escribe una pregunta..."
                     />
                     <button class="posts-header__button">Publicar</button>
@@ -67,278 +123,440 @@
                     <article class="posts-item">
                         <header class="posts-item__header">
                             <section class="posts-item__header__user-section">
-                                <img 
+                                <img
                                     class="posts-item__header__user-section__user-icon"
-                                    src="" 
+                                    src=""
                                     alt="Imagen del perfil del usuario"
                                     title="Icono del usuario"
-                                >
+                                />
                                 <div>
                                     <div>
-                                        <span class="posts-item__user-section__username">Nombre</span>
-                                        <span class="posts-item__user-section__time"> - Hace cuanto se publicó</span>
+                                        <span
+                                            class="posts-item__user-section__username"
+                                        >
+                                            Nombre
+                                        </span>
+                                        <span
+                                            class="posts-item__user-section__time"
+                                        >
+                                            - Hace cuanto se publicó
+                                        </span>
                                     </div>
-                                    <h3 class="posts-item__user-section__topic">Tema</h3>
+                                    <h3 class="posts-item__user-section__topic">
+                                        Tema
+                                    </h3>
                                 </div>
                             </section>
                             <aside>
-                                <button class="posts-item__report-button">Reportar</button>
+                                <button class="posts-item__report-button">
+                                    <i class="fa-regular fa-flag"></i>
+                                </button>
                             </aside>
                         </header>
                         <section class="posts-item__content">
                             <header>
-                                <h2 class="posts-item__content__title">Titulo</h2>
+                                <h2 class="posts-item__content__title">
+                                    Titulo
+                                </h2>
                             </header>
                             <aside>
                                 <p class="posts-item__content__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum ipsum suscipit est ad temporibus. Laborum optio mollitia nobis alias eos et ipsam, veritatis quae odit delectus recusandae officia fuga? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus vitae aliquid autem perferendis a nesciunt dolores, ipsa quasi vel repellat possimus nisi quia blanditiis earum. Molestiae, similique. Odio, ea?
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum nostrum ipsum
+                                    suscipit est ad temporibus. Laborum optio
+                                    mollitia nobis alias eos et ipsam, veritatis
+                                    quae odit delectus recusandae officia fuga?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quisquam temporibus vitae
+                                    aliquid autem perferendis a nesciunt
+                                    dolores, ipsa quasi vel repellat possimus
+                                    nisi quia blanditiis earum. Molestiae,
+                                    similique. Odio, ea?
                                 </p>
                             </aside>
                         </section>
                         <aside class="posts-item__interactions">
                             <div class="posts-item__interactions__main-buttons">
-                                <button class="posts-item__interaction-button">Like</button>
-                                <button class="posts-item__interaction-button">Dislike</button>
-                                <a 
+                                <button class="posts-item__interaction-button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <a
                                     class="posts-item__interaction-button"
                                     href=""
                                 >
-                                    Comentar
+                                    <i class="fa-regular fa-comment"></i>
                                 </a>
                             </div>
-                            <button class="posts-item__interaction-button">Guardar</button>
+                            <button class="posts-item__interaction-button">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
                         </aside>
                     </article>
                     <article class="posts-item">
                         <header class="posts-item__header">
                             <section class="posts-item__header__user-section">
-                                <img 
+                                <img
                                     class="posts-item__header__user-section__user-icon"
-                                    src="" 
+                                    src=""
                                     alt="Imagen del perfil del usuario"
                                     title="Icono del usuario"
-                                >
+                                />
                                 <div>
                                     <div>
-                                        <span class="posts-item__user-section__username">Nombre</span>
-                                        <span class="posts-item__user-section__time"> - Hace cuanto se publicó</span>
+                                        <span
+                                            class="posts-item__user-section__username"
+                                        >
+                                            Nombre
+                                        </span>
+                                        <span
+                                            class="posts-item__user-section__time"
+                                        >
+                                            - Hace cuanto se publicó
+                                        </span>
                                     </div>
-                                    <h3 class="posts-item__user-section__topic">Tema</h3>
+                                    <h3 class="posts-item__user-section__topic">
+                                        Tema
+                                    </h3>
                                 </div>
                             </section>
                             <aside>
-                                <button class="posts-item__report-button">Reportar</button>
+                                <button class="posts-item__report-button">
+                                    <i class="fa-regular fa-flag"></i>
+                                </button>
                             </aside>
                         </header>
                         <section class="posts-item__content">
                             <header>
-                                <h2 class="posts-item__content__title">Titulo</h2>
+                                <h2 class="posts-item__content__title">
+                                    Titulo
+                                </h2>
                             </header>
                             <aside>
                                 <p class="posts-item__content__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum ipsum suscipit est ad temporibus. Laborum optio mollitia nobis alias eos et ipsam, veritatis quae odit delectus recusandae officia fuga? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus vitae aliquid autem perferendis a nesciunt dolores, ipsa quasi vel repellat possimus nisi quia blanditiis earum. Molestiae, similique. Odio, ea?
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum nostrum ipsum
+                                    suscipit est ad temporibus. Laborum optio
+                                    mollitia nobis alias eos et ipsam, veritatis
+                                    quae odit delectus recusandae officia fuga?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quisquam temporibus vitae
+                                    aliquid autem perferendis a nesciunt
+                                    dolores, ipsa quasi vel repellat possimus
+                                    nisi quia blanditiis earum. Molestiae,
+                                    similique. Odio, ea?
                                 </p>
                             </aside>
                         </section>
                         <aside class="posts-item__interactions">
                             <div class="posts-item__interactions__main-buttons">
-                                <button class="posts-item__interaction-button">Like</button>
-                                <button class="posts-item__interaction-button">Dislike</button>
-                                <a 
+                                <button class="posts-item__interaction-button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <a
                                     class="posts-item__interaction-button"
                                     href=""
                                 >
-                                    Comentar
+                                    <i class="fa-regular fa-comment"></i>
                                 </a>
                             </div>
-                            <button class="posts-item__interaction-button">Guardar</button>
+                            <button class="posts-item__interaction-button">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
                         </aside>
                     </article>
                     <article class="posts-item">
                         <header class="posts-item__header">
                             <section class="posts-item__header__user-section">
-                                <img 
+                                <img
                                     class="posts-item__header__user-section__user-icon"
-                                    src="" 
+                                    src=""
                                     alt="Imagen del perfil del usuario"
                                     title="Icono del usuario"
-                                >
+                                />
                                 <div>
                                     <div>
-                                        <span class="posts-item__user-section__username">Nombre</span>
-                                        <span class="posts-item__user-section__time"> - Hace cuanto se publicó</span>
+                                        <span
+                                            class="posts-item__user-section__username"
+                                        >
+                                            Nombre
+                                        </span>
+                                        <span
+                                            class="posts-item__user-section__time"
+                                        >
+                                            - Hace cuanto se publicó
+                                        </span>
                                     </div>
-                                    <h3 class="posts-item__user-section__topic">Tema</h3>
+                                    <h3 class="posts-item__user-section__topic">
+                                        Tema
+                                    </h3>
                                 </div>
                             </section>
                             <aside>
-                                <button class="posts-item__report-button">Reportar</button>
+                                <button class="posts-item__report-button">
+                                    <i class="fa-regular fa-flag"></i>
+                                </button>
                             </aside>
                         </header>
                         <section class="posts-item__content">
                             <header>
-                                <h2 class="posts-item__content__title">Titulo</h2>
+                                <h2 class="posts-item__content__title">
+                                    Titulo
+                                </h2>
                             </header>
                             <aside>
                                 <p class="posts-item__content__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum ipsum suscipit est ad temporibus. Laborum optio mollitia nobis alias eos et ipsam, veritatis quae odit delectus recusandae officia fuga? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus vitae aliquid autem perferendis a nesciunt dolores, ipsa quasi vel repellat possimus nisi quia blanditiis earum. Molestiae, similique. Odio, ea?
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum nostrum ipsum
+                                    suscipit est ad temporibus. Laborum optio
+                                    mollitia nobis alias eos et ipsam, veritatis
+                                    quae odit delectus recusandae officia fuga?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quisquam temporibus vitae
+                                    aliquid autem perferendis a nesciunt
+                                    dolores, ipsa quasi vel repellat possimus
+                                    nisi quia blanditiis earum. Molestiae,
+                                    similique. Odio, ea?
                                 </p>
                             </aside>
                         </section>
                         <aside class="posts-item__interactions">
                             <div class="posts-item__interactions__main-buttons">
-                                <button class="posts-item__interaction-button">Like</button>
-                                <button class="posts-item__interaction-button">Dislike</button>
-                                <a 
+                                <button class="posts-item__interaction-button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <a
                                     class="posts-item__interaction-button"
                                     href=""
                                 >
-                                    Comentar
+                                    <i class="fa-regular fa-comment"></i>
                                 </a>
                             </div>
-                            <button class="posts-item__interaction-button">Guardar</button>
+                            <button class="posts-item__interaction-button">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
                         </aside>
                     </article>
                     <article class="posts-item">
                         <header class="posts-item__header">
                             <section class="posts-item__header__user-section">
-                                <img 
+                                <img
                                     class="posts-item__header__user-section__user-icon"
-                                    src="" 
+                                    src=""
                                     alt="Imagen del perfil del usuario"
                                     title="Icono del usuario"
-                                >
+                                />
                                 <div>
                                     <div>
-                                        <span class="posts-item__user-section__username">Nombre</span>
-                                        <span class="posts-item__user-section__time"> - Hace cuanto se publicó</span>
+                                        <span
+                                            class="posts-item__user-section__username"
+                                        >
+                                            Nombre
+                                        </span>
+                                        <span
+                                            class="posts-item__user-section__time"
+                                        >
+                                            - Hace cuanto se publicó
+                                        </span>
                                     </div>
-                                    <h3 class="posts-item__user-section__topic">Tema</h3>
+                                    <h3 class="posts-item__user-section__topic">
+                                        Tema
+                                    </h3>
                                 </div>
                             </section>
                             <aside>
-                                <button class="posts-item__report-button">Reportar</button>
+                                <button class="posts-item__report-button">
+                                    <i class="fa-regular fa-flag"></i>
+                                </button>
                             </aside>
                         </header>
                         <section class="posts-item__content">
                             <header>
-                                <h2 class="posts-item__content__title">Titulo</h2>
+                                <h2 class="posts-item__content__title">
+                                    Titulo
+                                </h2>
                             </header>
                             <aside>
                                 <p class="posts-item__content__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum ipsum suscipit est ad temporibus. Laborum optio mollitia nobis alias eos et ipsam, veritatis quae odit delectus recusandae officia fuga? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus vitae aliquid autem perferendis a nesciunt dolores, ipsa quasi vel repellat possimus nisi quia blanditiis earum. Molestiae, similique. Odio, ea?
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum nostrum ipsum
+                                    suscipit est ad temporibus. Laborum optio
+                                    mollitia nobis alias eos et ipsam, veritatis
+                                    quae odit delectus recusandae officia fuga?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quisquam temporibus vitae
+                                    aliquid autem perferendis a nesciunt
+                                    dolores, ipsa quasi vel repellat possimus
+                                    nisi quia blanditiis earum. Molestiae,
+                                    similique. Odio, ea?
                                 </p>
                             </aside>
                         </section>
                         <aside class="posts-item__interactions">
                             <div class="posts-item__interactions__main-buttons">
-                                <button class="posts-item__interaction-button">Like</button>
-                                <button class="posts-item__interaction-button">Dislike</button>
-                                <a 
+                                <button class="posts-item__interaction-button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <a
                                     class="posts-item__interaction-button"
                                     href=""
                                 >
-                                    Comentar
+                                    <i class="fa-regular fa-comment"></i>
                                 </a>
                             </div>
-                            <button class="posts-item__interaction-button">Guardar</button>
+                            <button class="posts-item__interaction-button">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
                         </aside>
                     </article>
                     <article class="posts-item">
                         <header class="posts-item__header">
                             <section class="posts-item__header__user-section">
-                                <img 
+                                <img
                                     class="posts-item__header__user-section__user-icon"
-                                    src="" 
+                                    src=""
                                     alt="Imagen del perfil del usuario"
                                     title="Icono del usuario"
-                                >
+                                />
                                 <div>
                                     <div>
-                                        <span class="posts-item__user-section__username">Nombre</span>
-                                        <span class="posts-item__user-section__time"> - Hace cuanto se publicó</span>
+                                        <span
+                                            class="posts-item__user-section__username"
+                                        >
+                                            Nombre
+                                        </span>
+                                        <span
+                                            class="posts-item__user-section__time"
+                                        >
+                                            - Hace cuanto se publicó
+                                        </span>
                                     </div>
-                                    <h3 class="posts-item__user-section__topic">Tema</h3>
+                                    <h3 class="posts-item__user-section__topic">
+                                        Tema
+                                    </h3>
                                 </div>
                             </section>
                             <aside>
-                                <button class="posts-item__report-button">Reportar</button>
+                                <button class="posts-item__report-button">
+                                    <i class="fa-regular fa-flag"></i>
+                                </button>
                             </aside>
                         </header>
                         <section class="posts-item__content">
                             <header>
-                                <h2 class="posts-item__content__title">Titulo</h2>
+                                <h2 class="posts-item__content__title">
+                                    Titulo
+                                </h2>
                             </header>
                             <aside>
                                 <p class="posts-item__content__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum ipsum suscipit est ad temporibus. Laborum optio mollitia nobis alias eos et ipsam, veritatis quae odit delectus recusandae officia fuga? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus vitae aliquid autem perferendis a nesciunt dolores, ipsa quasi vel repellat possimus nisi quia blanditiis earum. Molestiae, similique. Odio, ea?
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum nostrum ipsum
+                                    suscipit est ad temporibus. Laborum optio
+                                    mollitia nobis alias eos et ipsam, veritatis
+                                    quae odit delectus recusandae officia fuga?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quisquam temporibus vitae
+                                    aliquid autem perferendis a nesciunt
+                                    dolores, ipsa quasi vel repellat possimus
+                                    nisi quia blanditiis earum. Molestiae,
+                                    similique. Odio, ea?
                                 </p>
                             </aside>
                         </section>
                         <aside class="posts-item__interactions">
                             <div class="posts-item__interactions__main-buttons">
-                                <button class="posts-item__interaction-button">Like</button>
-                                <button class="posts-item__interaction-button">Dislike</button>
-                                <a 
+                                <button class="posts-item__interaction-button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <a
                                     class="posts-item__interaction-button"
                                     href=""
                                 >
-                                    Comentar
+                                    <i class="fa-regular fa-comment"></i>
                                 </a>
                             </div>
-                            <button class="posts-item__interaction-button">Guardar</button>
+                            <button class="posts-item__interaction-button">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
                         </aside>
                     </article>
                     <article class="posts-item">
                         <header class="posts-item__header">
                             <section class="posts-item__header__user-section">
-                                <img 
+                                <img
                                     class="posts-item__header__user-section__user-icon"
-                                    src="" 
+                                    src=""
                                     alt="Imagen del perfil del usuario"
                                     title="Icono del usuario"
-                                >
+                                />
                                 <div>
                                     <div>
-                                        <span class="posts-item__user-section__username">Nombre</span>
-                                        <span class="posts-item__user-section__time"> - Hace cuanto se publicó</span>
+                                        <span
+                                            class="posts-item__user-section__username"
+                                        >
+                                            Nombre
+                                        </span>
+                                        <span
+                                            class="posts-item__user-section__time"
+                                        >
+                                            - Hace cuanto se publicó
+                                        </span>
                                     </div>
-                                    <h3 class="posts-item__user-section__topic">Tema</h3>
+                                    <h3 class="posts-item__user-section__topic">
+                                        Tema
+                                    </h3>
                                 </div>
                             </section>
                             <aside>
-                                <button class="posts-item__report-button">Reportar</button>
+                                <button class="posts-item__report-button">
+                                    <i class="fa-regular fa-flag"></i>
+                                </button>
                             </aside>
                         </header>
                         <section class="posts-item__content">
                             <header>
-                                <h2 class="posts-item__content__title">Titulo</h2>
+                                <h2 class="posts-item__content__title">
+                                    Titulo
+                                </h2>
                             </header>
                             <aside>
                                 <p class="posts-item__content__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum ipsum suscipit est ad temporibus. Laborum optio mollitia nobis alias eos et ipsam, veritatis quae odit delectus recusandae officia fuga? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus vitae aliquid autem perferendis a nesciunt dolores, ipsa quasi vel repellat possimus nisi quia blanditiis earum. Molestiae, similique. Odio, ea?
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum nostrum ipsum
+                                    suscipit est ad temporibus. Laborum optio
+                                    mollitia nobis alias eos et ipsam, veritatis
+                                    quae odit delectus recusandae officia fuga?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Quisquam temporibus vitae
+                                    aliquid autem perferendis a nesciunt
+                                    dolores, ipsa quasi vel repellat possimus
+                                    nisi quia blanditiis earum. Molestiae,
+                                    similique. Odio, ea?
                                 </p>
                             </aside>
                         </section>
                         <aside class="posts-item__interactions">
                             <div class="posts-item__interactions__main-buttons">
-                                <button class="posts-item__interaction-button">Like</button>
-                                <button class="posts-item__interaction-button">Dislike</button>
-                                <a 
+                                <button class="posts-item__interaction-button">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <a
                                     class="posts-item__interaction-button"
                                     href=""
                                 >
-                                    Comentar
+                                    <i class="fa-regular fa-comment"></i>
                                 </a>
                             </div>
-                            <button class="posts-item__interaction-button">Guardar</button>
+                            <button class="posts-item__interaction-button">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
                         </aside>
                     </article>
                 </section>
             </article>
         </main>
 
-        <footer class="footer" id="contacts">
+        <footer class="footer" id="information">
             <header>
                 <h3 class="footer__header-title">¿Quieres contactarnos?</h3>
             </header>
@@ -422,9 +640,13 @@
                             Todos los derechos reservados
                         </h4>
                     </header>
-                    <div class="footer__article__aside-app-icon" title="Logo de la App"></div>
+                    <div
+                        class="footer__article__aside-app-icon"
+                        title="Logo de la App"
+                    ></div>
                 </aside>
             </article>
         </footer>
+        <script src="../scripts/menu.js"></script>
     </body>
 </html>

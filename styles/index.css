@@ -3,6 +3,7 @@
 main {
     padding: 0px 100px;
     color: #fff;
+    flex: 1;
 }
 
 /* Estilos de la barra de busqueda */
@@ -41,7 +42,7 @@ main {
 
 .main-header__search-button {
     padding: 13px 30px;
-    background-color: #000d;
+    background-color: #111d;
     color: #fff;
     font-weight: 700;
     border-radius: 0px 5px 5px 0px;
@@ -87,6 +88,7 @@ main {
 
 .main-article__topics-card:hover {  
     transition: 0.7s;
+    /* background-color: var(--naranjaPastel); */
     background-color: #ed8851;
 }
 
@@ -130,6 +132,7 @@ main {
 
 .recent-posts__header__link:hover {
     background-color: var(--rojoPastel);
+    transition: 0.5s;
 }
 
 .recent-posts__items {
@@ -149,6 +152,7 @@ main {
     background-color: var(--azulClaro);
     width: 251px;
     padding: 0px 0px 20px 0px;
+    border: 1px solid #888;
 }
 
 /* Estilos de cada elemento de publicación reciente */

@@ -9,9 +9,11 @@
     --rojoPrincipal: #D43F3F;
     --rojoPastel: #E87F7F;
     --rojoBoton: #ED4A4A;
-    --naranjaPrincipal: #ea580c; 
-    --azulClaro: #0D1219;
-    --azulOscuro: #010409;
+    --naranjaPrincipal: #ea580c;
+    --naranjaPastel: #f97; 
+    --azulClaro: #192834; /* #0C1D2B; */
+    --azulOscuro: #0b1826;
+    --azulBoton: #1b364f;
 }
 
 body {
@@ -20,11 +22,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    scrollbar-gutter: stable;
 }
 
 main {
+    margin: 90px 0px 0px 0px ;
     flex: 1;
-    background-color: var(--azulClaro);
+    background: var(--azulClaro);
 }
 
 a {
@@ -43,53 +47,58 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     background-color: var(--azulOscuro);
     color: #fff;
+    width: 100%;
+    position: fixed;
 }
 
-.menu-bar__logo {
+.menu-bar__header {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    width: 350px;
+    background-color: var(--azulOscuro);
+    padding: 10px 0px 10px 10px;
+}
+
+.menu-bar__toggle-menu__link__button,
+.menu-bar__header__toggle-button {
+    background-color: var(--azulOscuro);
+    height: 60px;
+    width: 60px;
+    border: none;
+}
+
+.menu-bar__header__toggle-button:hover {
+    background-color: var(--azulBoton);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.menu-bar__toggle-menu__link__button__icon,
+.menu-bar__header__toggle-button__icon {
+    color: #fff;
+    font-size: 26px;
+}
+
+.menu-bar__header__logo {
     background-image: url('../images/logoStudySolve.png');
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    width: 200px;
+    width: 180px;
     height: 70px;
 }
 
-.menu-bar__links {
+.menu-bar__login-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 0px 50px;
+    gap: 0px 20px; 
     padding: 0px 30px 0px 0px;
 }
 
-.menu-bar__links__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0px 100px;
-    margin: 0px 40px 0px 0px;
-}
-
-.menu-bar__links__list-link {
-    color: #fff;
-    font-size: 16px;
-}
-
-.menu-bar__links__list-link:hover {
-    border-bottom: 1px solid #fff;
-}
-
-.menu-bar__login-container {
-    display: flex;
-    flex-direction: row;
-    gap: 0px 20px;
-    margin: 0px -10px 0px 20px; 
-}
-
-.menu-bar__login-container-button {
+.menu-bar__login__button {
     background-color: var(--rojoBoton);
     padding: 11px 18px;
     border-radius: 20px;
@@ -98,9 +107,87 @@ li {
     font-size: 16px;
 }
 
-.menu-bar__login-container-button:hover {
+.menu-bar__login__button:hover {
     background-color: var(--rojoPastel);
     transition: 0.5s;
+}
+
+/* Background oscuro del menu desplegable */
+.menu-bar__dark-background {
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #0004; 
+    z-index: 1;
+}
+
+/* Animación del menu desplegable; */
+
+/* Mostrar */
+@keyframes showAnimation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Ocultar */ 
+@keyframes hideAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Estilos menu desplegable */
+.menu-bar__toggle-menu {
+    background-color: var(--azulOscuro);
+    min-width: 350px;
+    height: 100%;
+    position: fixed;
+    flex-grow: 1;
+    z-index: 2;
+}
+
+.menu-bar__toggle-menu__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.menu-bar__toggle-menu__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-bar__toggle-menu__link {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.menu-bar__toggle-menu__link__button:hover,
+.menu-bar__toggle-menu__link:hover {
+    background-color: var(--azulBoton);
+}
+
+.menu-bar__toggle-menu__link__button__icon {
+    font-size: 22px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Estilos del Footer */

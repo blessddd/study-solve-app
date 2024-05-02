@@ -61,6 +61,11 @@ main {
     height: 40px;
 }
 
+.posts-header__button:hover {
+    background-color: var(--naranjaPastel);
+    transition: 0.5s;
+}
+
 .posts-content {
     display: flex;
     flex-direction: column;
@@ -72,7 +77,6 @@ main {
     font-size: 30px;
 }
 
-
 /* Estilos de la tarjeta de cada publicación */
 .posts-item {
     display: flex;
@@ -81,7 +85,7 @@ main {
     border: 1px solid #555;
     padding: 20px;
     border-radius: 0.5rem;
-    background-color: #010409;
+    background-color: var(--azulOscuro);
 }
 
 /* Estilos del encabezado de la tarjeta de cada publicación */
@@ -129,8 +133,13 @@ main {
     border: none;
     background-color: var(--rojoBoton);
     color: #fff;
-    font-weight: 700;
+    font-size: 16px;
     margin: 0px 0px 6px 0px;
+}
+
+.posts-item__report-button:hover {
+    background-color: var(--rojoPastel);
+    transition: 0.5s;
 }
 
 /* Estilos del contenido principal de la tarjeta de cada publicación */
@@ -165,11 +174,18 @@ main {
 }
 
 .posts-item__interaction-button {
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
     border-radius: 0.5rem;
     border: none;
     color: #fff;
-    font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     background-color: var(--naranjaPrincipal);
+}
+
+.posts-item__interaction-button:hover {
+    background-color: var(--naranjaPastel);
+    transition: 0.5s;
 }
