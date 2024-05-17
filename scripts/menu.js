@@ -1,4 +1,3 @@
-
 const toggleMenuShowButton = document.querySelector(".show");
 const toggleMenuHideButton = document.querySelector(".hide");
 const menuToggleBackground = document.querySelector(".menu-bar__dark-background");
@@ -21,10 +20,10 @@ const hideMenu = () => {
     document.body.style.overflow = "";
 }
 
-// Menu toggle buttons
+// Toggle Menu buttons
 toggleMenuShowButton.addEventListener("click", () => showMenu());
 toggleMenuHideButton.addEventListener("click", () => hideMenu());
 
-// toggle menu background
+// Toggle Menu background
 menuToggleBackground.addEventListener("click", () => hideMenu());
 informationButton.addEventListener("click", () => hideMenu());

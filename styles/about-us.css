@@ -81,9 +81,11 @@ main {
     justify-content: center;
 }
 
-.presentation-article__image-container__image {
-    height: 340px;
-    width: 500px;
+.presentation-article__image-container__image,
+.information-article__section-image {
+    max-height: 450px;
+    max-width: 450px;
+    object-fit: cover;
 }
 
 /* Sección de información */
@@ -156,11 +158,6 @@ main {
 
 .information-article__section-span {
     font-size: 16px;
-}
-
-.information-article__section-image {
-    height: 350px;
-    width: 350px;
 }
 
 .information-article__aside {
