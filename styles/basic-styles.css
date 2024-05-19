@@ -83,10 +83,8 @@ li {
 }
 
 .menu-bar__header__logo {
-    background-image: url('../images/logoStudySolve.png');
-    background-size: cover;
-    background-position: center;
     object-fit: cover;
+    overflow: hidden;
     width: 180px;
     height: 70px;
 }
@@ -253,11 +251,9 @@ li {
 }
 
 .footer__article__aside-app-icon {
-    background-image: url('../images/logoStudySolve.png');
-    background-size: cover;
-    background-position: center;
     object-fit: cover;
-    width: 400px;
+    overflow: hidden;
+    width: 350px;
     height: 150px;
 }   
 

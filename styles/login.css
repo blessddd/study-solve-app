@@ -1,0 +1,146 @@
+.login__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Estilos del login */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azulOscuro);
+    border-radius: 0.5rem;
+    border: 1px solid #555;
+    padding: 30px;
+    gap: 20px;
+}
+
+.login__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px 5px 30px;
+    gap: 10px;
+}
+
+.login__header__app-logo {
+    height: 50px;
+    width: 200px;
+    object-fit: cover;
+    margin: 0px 0px 20px 0px;
+}
+
+.login__header__title {
+    color: #fff;
+    text-align: center;
+}
+
+.login__header__message {
+    color: #fffd;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.login__form__section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__form__label {
+    font-weight: 600;
+    color: #fffe;
+}
+
+.login__form__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login__form__input {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: inherit;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 10px;
+}
+
+.login__form__input-message {
+    color: #fffd;
+    position: absolute;
+    margin: 15px 0px 0px 18px;
+    user-select: none;
+}
+
+/* Diseós para los efectos en los inputs */
+.login__form__input:focus {
+    outline: none;
+    border: 2px solid var(--rojoBoton);
+}
+
+.login__form__input:focus + .login__form__input-message,
+.login__form__input-container.focused .login__form__input-message  {
+    transform: translate(-10px, -25px);
+    background-color: var(--azulOscuro);
+    color: #e89999;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 5px;
+    z-index: 1000;
+    transition: .2s;
+}
+
+.login__form__input:not(:focus) + .login__form__input-message {
+    color: #fffd;
+}
+
+/* Estilos del checkbox para mostrar / ocultar la contraseña */
+.login__form__toggle-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: #fffd;
+    font-weight: 700;
+}
+
+.form__toggle-container__checkbox {
+    border: none;
+    height: 15px;
+    width: 15px;
+}
+
+.form__toggle-container__label {
+    font-size: 14px;
+}
+
+/* Estilos de los botones */
+
+.login__form__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__button, .form__link {
+    margin: 5px 0px 0px 0px;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 8px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--rojoBoton);
+}

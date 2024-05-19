@@ -30,6 +30,7 @@ main {
     min-width: 50px;
     background-color: #fff;
     border-radius: 50px;
+    overflow: hidden;
 }
 
 .posts-header__input {
@@ -105,6 +106,7 @@ main {
 .posts-item__header__user-section__user-icon {
     width: 40px;
     height: 40px;
+    overflow: hidden;
     border-radius: 25px;
     background-color: #fff;
 }

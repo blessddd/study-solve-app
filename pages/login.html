@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Study Solve - Inicio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/basic-styles.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="menu-bar">
+                <header class="menu-bar__header">
+                    <button class="menu-bar__header__toggle-button show">
+                        <i
+                            class="menu-bar__header__toggle-button__icon fas fa-bars"
+                        ></i>
+                    </button>
+                    <a href="./index.html">
+                        <img
+                            class="menu-bar__header__logo"
+                            src="../images/logoStudySolve.png"
+                            alt="Imagen del Logo de la Aplicación"
+                            title="Logo de la App"
+                        ></img>
+                    </a>
+                </header>
+                <section class="menu-bar__login-links">
+                    <a href="" class="menu-bar__login__button">
+                        Iniciar Sesión
+                    </a>
+                </section>
+            </nav>
+            <div class="menu-bar__dark-background hidden"></div>
+            <nav class="menu-bar__toggle-menu hidden">
+                <header class="menu-bar__header">
+                    <button class="menu-bar__header__toggle-button hide">
+                        <i
+                            class="menu-bar__header__toggle-button__icon fas fa-bars"
+                        ></i>
+                    </button>
+                    <a href="./index.html">
+                        <img
+                            class="menu-bar__header__logo"
+                            src="../images/logoStudySolve.png"
+                            alt="Imagen del Logo de la Aplicación"
+                            title="Logo de la App"
+                        ></img>
+                    </a>
+                </header>
+                <section class="menu-bar__toggle-menu__section">
+                    <article>
+                        <ul class="menu-bar__toggle-menu__links">
+                            <li>
+                                <a 
+                                    href="./index.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fas fa-house"
+                                    ></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="./about-us.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fa-solid fa-user-group"
+                                    ></i>
+                                    <span>Sobre Nosotros</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="./posts.html" 
+                                    class="menu-bar__toggle-menu__link">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fas fa-newspaper"
+                                    ></i>
+                                    <span>Publicaciones</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                    href="#information" 
+                                    class="menu-bar__toggle-menu__link menu-bar__toggle-menu__link--us">
+                                    <i
+                                        class="menu-bar__toggle-menu__link__button__icon fa-solid fa-phone"
+                                    ></i>
+                                    <span>Contacto</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </nav>
+        </header>
+
+        <main>
+            <section class="login__container">
+                <section class="login">
+                    <header class="login__header">
+                        <img    
+                            class="login__header__app-logo"
+                            src="../images/logoStudySolve.png" 
+                            alt="Logo de la Aplicación"
+                            title="Logo de la App"
+                        >
+                        <h2 class="login__header__title">Iniciar sesión</h2>
+                        <p class="login__header__message">
+                            Inicia sesión en tu cuenta para poder continuar
+                        </p>
+                    </header>
+                    <form class="login__form" action="" method="post">
+                        <div class="login__form__section">
+                            <label 
+                                class="login__form__label" 
+                                for="username"
+                            >
+                                Usuario
+                            </label>
+                            <div class="login__form__input-container">
+                                <input 
+                                    class="login__form__input" 
+                                    type="text"
+                                    name="username"
+                                    autocomplete="off"
+                                    required
+                                >
+                                <span class="login__form__input-message">
+                                    Ingresa tu usuario
+                                </span>
+                            </div>
+                        </div>
+                        <div class="login__form__section">
+                            <label 
+                                class="login__form__label" 
+                                for="password"
+                            >
+                                Contraseña
+                            </label>
+                            <div class="login__form__input-container">
+                                <input 
+                                    class="login__form__input password-input" 
+                                    type="password" 
+                                    name="password"
+                                    required
+                                >
+                                <span class="login__form__input-message">
+                                    Ingresa tu contraseña
+                                </span>
+                                <div class="login__form__toggle-container">
+                                    <input 
+                                        class="form__toggle-container__checkbox"
+                                        type="checkbox" 
+                                        name="toggle-checkbox" 
+                                    >
+                                    <label 
+                                        class="form__toggle-container__label" 
+                                        for="toggle-checkbox"
+                                    >
+                                        Mostrar la contraseña
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login__form__buttons">
+                            <a class="form__link" href="">Crear cuenta</a>
+                            <button class="form__button" type="submit">Ingresar</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+            </main>
+        <script src="../scripts/menu.js"></script>
+        <script src="../scripts/login.js"></script>
+    </body>
+</html>

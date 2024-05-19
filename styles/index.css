@@ -160,6 +160,7 @@ main {
     height: 150px;
     border-radius: 15px 15px 0px 0px;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .recent-posts__item-header, .recent-posts__author-info {
@@ -194,6 +195,7 @@ main {
 .recent-posts__author-image {
     width: 40px;
     height: 40px;
+    overflow: hidden;
     border-radius: 50px;
     background-color: #fff;
 }
