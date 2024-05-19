@@ -92,7 +92,7 @@
 
 .login__form__input:focus + .login__form__input-message,
 .login__form__input-container.focused .login__form__input-message  {
-    transform: translate(-10px, -25px);
+    transform: translate(-10px, -20px);
     background-color: var(--azulOscuro);
     color: #e89999;
     font-weight: 700;

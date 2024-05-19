@@ -5,11 +5,8 @@
 
 main {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 /* Estilos del main */
@@ -22,14 +19,15 @@ main {
     align-items: center;
     flex-wrap: wrap;
     flex: 1;
+    gap: 50px;
     background: linear-gradient(var(--azulOscuro) 30%, #000b);/* var(--azulOscuro); */
     color: #fff;
-    padding: 55px 100px 75px 100px;
-    width: 100vw;
+    padding: 20px 60px;
 }
 
 .presentation-article__header {
-    width: 50%;
+    width: 40%;
+    min-width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -37,7 +35,7 @@ main {
 }
 
 .presentation-article__header-title {
-    font-size: 70px;
+    font-size: 55px;
     color: var(--rojoPrincipal);
     font-weight: 900;
     letter-spacing: 1px;
@@ -45,14 +43,15 @@ main {
 
 .presentation-article__header-paragraph {
     font-size: 16px;
-    font-weight: 400;
+    line-height: 28px;
     text-wrap: balance;
+    font-weight: 400;
 }
 
 .presentation-article__header-main-span {
     color: var(--rojoPrincipal);
     font-weight: 900;
-    font-size: 25px;
+    font-size: 22px;
     padding: 0px 0px 0px 5px;
 }
 
@@ -92,19 +91,19 @@ main {
 .information-article {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     flex: 1;
     gap: 50px;
     background-color:#fff;
-    padding: 60px 100px;
-    width: 100vw;
+    padding: 60px;
 }
 
 .information-article__header-title {
     color: var(--naranjaPrincipal);
     font-size: 50px;
     font-weight: 900;
+    text-align: center;
 }
 
 .information-article__section {
@@ -117,7 +116,7 @@ main {
 .information-article-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex: 1;
     /* flex-wrap: wrap; */
