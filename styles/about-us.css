@@ -12,6 +12,12 @@ main {
 /* Estilos del main */
 
 /* Articulo de bienvenida */
+.presentation-article-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
 .presentation-article {
     display: flex;
     flex-direction: row;
@@ -118,7 +124,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
     /* flex-wrap: wrap; */
 }
 
