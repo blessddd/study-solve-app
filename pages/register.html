@@ -112,9 +112,9 @@
                             alt="Logo de la Aplicación"
                             title="Logo de la App"
                         >
-                        <h2 class="login__header__title">Iniciar sesión</h2>
+                        <h2 class="login__header__title">Crear cuenta</h2>
                         <p class="login__header__message">
-                            Inicia sesión en tu cuenta para poder continuar
+                            Ingresa los siguientes datos para crear tu cuenta
                         </p>
                     </header>
                     <form class="login__form" action="" method="post">
@@ -155,6 +155,25 @@
                                 <span class="login__form__input-message">
                                     Ingresa tu contraseña
                                 </span>
+                            </div>
+                        </div>
+                        <div class="login__form__section">
+                            <label 
+                                class="login__form__label" 
+                                for="password"
+                            >
+                                Confirma tu contraseña
+                            </label>
+                            <div class="login__form__input-container">
+                                <input 
+                                    class="login__form__input password-input" 
+                                    type="password" 
+                                    name="password"
+                                    required
+                                >
+                                <span class="login__form__input-message">
+                                    Ingresa tu contraseña
+                                </span>
                                 <div class="login__form__toggle-container">
                                     <input 
                                         class="form__toggle-container__checkbox"
@@ -171,8 +190,8 @@
                             </div>
                         </div>
                         <div class="login__form__buttons">
-                            <a class="form__link" href="./register.html">Crear cuenta</a>
-                            <button class="form__button" type="submit">Ingresar</button>
+                            <a class="form__link" href="./login.html">Iniciar sesión</a>
+                            <button class="form__button" type="submit">Continuar</button>
                         </div>
                     </form>
                 </section>

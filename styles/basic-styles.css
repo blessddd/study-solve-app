@@ -51,6 +51,7 @@ li {
     color: #fff;
     width: 100%;
     position: fixed;
+    top: 0;
 }
 
 .menu-bar__header {
